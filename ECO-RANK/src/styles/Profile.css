@@ -1,0 +1,86 @@
+.profile-page {
+  padding: 1.5rem 1rem 80px;
+  background-color: #f4faf7;
+  min-height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #1D9E75;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.profile-username {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.profile-name {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+/* stats */
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border: 0.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1D9E75;
+  margin: 0 0 4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #888;
+  margin: 0;
+}
+
+/* badges */
+.profile-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 1rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}

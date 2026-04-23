@@ -1,0 +1,118 @@
+
+<style>
+  .eco-hero { padding: 3rem 2rem 2rem; text-align: center; }
+  .eco-logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 2rem; }
+  .eco-logo-icon { width: 44px; height: 44px; border-radius: 12px; background: #1D9E75; display: flex; align-items: center; justify-content: center; }
+  .eco-logo-leaf { width: 24px; height: 24px; }
+  .eco-logo-name { font-size: 22px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.5px; }
+  .eco-logo-name span { color: #1D9E75; }
+  .eco-tagline-pill { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 500; padding: 4px 14px; border-radius: 999px; margin-bottom: 1.5rem; letter-spacing: 0.5px; }
+  .eco-heading { font-size: 28px; font-weight: 500; color: var(--color-text-primary); line-height: 1.3; margin: 0 0 1rem; }
+  .eco-heading span { color: #1D9E75; }
+  .eco-desc { font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; max-width: 480px; margin: 0 auto 2.5rem; }
+  .eco-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 auto 2.5rem; max-width: 520px; }
+  .eco-feature { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 14px 12px; text-align: center; border: 0.5px solid var(--color-border-tertiary); }
+  .eco-feature-icon { width: 32px; height: 32px; border-radius: 8px; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; }
+  .eco-feature-label { font-size: 12px; color: var(--color-text-secondary); line-height: 1.4; }
+  .eco-feature-val { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 2px; }
+  .eco-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: var(--border-radius-md); padding: 12px 36px; font-size: 15px; font-weight: 500; cursor: pointer; transition: background 0.15s; }
+  .btn-primary:hover { background: #0F6E56; }
+  .btn-secondary { background: var(--color-background-primary); color: var(--color-text-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 12px 36px; font-size: 15px; font-weight: 500; cursor: pointer; transition: background 0.15s; }
+  .btn-secondary:hover { background: var(--color-background-secondary); }
+  .eco-divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0 2rem 2rem; }
+  .eco-how { padding: 0 2rem 2.5rem; }
+  .eco-how-title { font-size: 13px; color: var(--color-text-tertiary); text-align: center; margin-bottom: 1.25rem; letter-spacing: 0.5px; }
+  .eco-steps { display: flex; align-items: flex-start; justify-content: center; gap: 0; max-width: 480px; margin: 0 auto; }
+  .eco-step { flex: 1; text-align: center; position: relative; }
+  .eco-step-dot { width: 32px; height: 32px; border-radius: 50%; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; }
+  .eco-step-line { position: absolute; top: 16px; left: 50%; width: 100%; height: 1px; background: var(--color-border-tertiary); z-index: 0; }
+  .eco-step:last-child .eco-step-line { display: none; }
+  .eco-step-text { font-size: 11px; color: var(--color-text-secondary); line-height: 1.4; }
+  .eco-footer { font-size: 12px; color: var(--color-text-tertiary); text-align: center; padding-bottom: 1.5rem; }
+</style>
+
+<div class="eco-hero">
+  <div class="eco-logo">
+    <div class="eco-logo-icon">
+      <svg class="eco-logo-leaf" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C7 2 3 7 3 12c0 3 1.5 5.5 4 7l1-3c-1.5-1-2.5-2.5-2.5-4C5.5 8 8.5 5 12 5c4.5 0 8 3.5 8 7.5S16.5 20 12 20v-3l-4 4 4 3v-3c5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="white"/>
+      </svg>
+    </div>
+    <span class="eco-logo-name">Eco<span>Rank</span></span>
+  </div>
+
+  <div class="eco-tagline-pill">Earth Day Hackathon 2026</div>
+
+  <h1 class="eco-heading">Act on the planet.<br><span>Earn points. Lead the change.</span></h1>
+
+  <p class="eco-desc">EcoRank turns everyday eco-friendly actions into a rewarding, competitive experience. Report litter, dispose of e-waste responsibly, complete daily challenges — and compete with your community on a live leaderboard.</p>
+
+  <div class="eco-features">
+    <div class="eco-feature">
+      <div class="eco-feature-icon" style="background: #E1F5EE;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6" stroke="#1D9E75" stroke-width="1.5"/>
+          <path d="M5 8l2 2 4-4" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="eco-feature-val">Report</div>
+      <div class="eco-feature-label">Spot & resolve problems</div>
+    </div>
+    <div class="eco-feature">
+      <div class="eco-feature-icon" style="background: #FAEEDA;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <polygon points="8,2 10,6 14,6.5 11,9.5 11.5,14 8,12 4.5,14 5,9.5 2,6.5 6,6" stroke="#BA7517" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="eco-feature-val">Earn</div>
+      <div class="eco-feature-label">Points for every action</div>
+    </div>
+    <div class="eco-feature">
+      <div class="eco-feature-icon" style="background: #E6F1FB;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect x="2" y="10" width="3" height="4" rx="1" fill="#378ADD"/>
+          <rect x="6.5" y="7" width="3" height="7" rx="1" fill="#378ADD"/>
+          <rect x="11" y="4" width="3" height="10" rx="1" fill="#378ADD"/>
+        </svg>
+      </div>
+      <div class="eco-feature-val">Compete</div>
+      <div class="eco-feature-label">Weekly leaderboards</div>
+    </div>
+  </div>
+
+  <div class="eco-btns">
+    <button class="btn-primary" onclick="sendPrompt('Build the Register page for EcoRank')">Create account</button>
+    <button class="btn-secondary" onclick="sendPrompt('Build the Login page for EcoRank')">Log in</button>
+  </div>
+</div>
+
+<hr class="eco-divider">
+
+<div class="eco-how">
+  <div class="eco-how-title">HOW IT WORKS</div>
+  <div class="eco-steps">
+    <div class="eco-step">
+      <div class="eco-step-line"></div>
+      <div class="eco-step-dot" style="background:#E1F5EE; color:#0F6E56; position:relative; z-index:1;">1</div>
+      <div class="eco-step-text">Spot a problem</div>
+    </div>
+    <div class="eco-step">
+      <div class="eco-step-line"></div>
+      <div class="eco-step-dot" style="background:#E1F5EE; color:#0F6E56; position:relative; z-index:1;">2</div>
+      <div class="eco-step-text">Photo & resolve</div>
+    </div>
+    <div class="eco-step">
+      <div class="eco-step-line"></div>
+      <div class="eco-step-dot" style="background:#E1F5EE; color:#0F6E56; position:relative; z-index:1;">3</div>
+      <div class="eco-step-text">Earn points</div>
+    </div>
+    <div class="eco-step">
+      <div class="eco-step-line"></div>
+      <div class="eco-step-dot" style="background:#1D9E75; color:#fff; position:relative; z-index:1;">4</div>
+      <div class="eco-step-text">Climb the rank</div>
+    </div>
+  </div>
+</div>
+
+<div class="eco-footer">Built for Nairobi. Powered by community action.</div>

@@ -1,0 +1,32 @@
+.badge-card {
+  background-color: #ffffff;
+  border: 0.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 12px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.badge-card.locked {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+.badge-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.badge-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.badge-description {
+  font-size: 11px;
+  color: #888;
+  margin: 0;
+  line-height: 1.4;
+}
